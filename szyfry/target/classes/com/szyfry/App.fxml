@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.szyfry.ControllerApp">
+   <children>
+      <MenuBar fx:id="menuBarApp">
+        <menus>
+          <Menu mnemonicParsing="false" text="Okno">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#Caesar" text="Caesar" />
+                  <MenuItem mnemonicParsing="false" onAction="#Vigenere" text="Vigenere" />
+                  <MenuItem mnemonicParsing="false" onAction="#Bacon" text="Bacon" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane prefHeight="423.0" prefWidth="750.0">
+         <children>
+            <ImageView fitHeight="423.0" fitWidth="531.0" layoutX="166.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@disc.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </children>
+</VBox>

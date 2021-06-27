@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.szyfry.ControllerBac">
+   <children>
+      <MenuBar fx:id="menuBarBac">
+        <menus>
+          <Menu mnemonicParsing="false" text="Okno">
+           <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Menu" text="Menu" />
+              <MenuItem mnemonicParsing="false" onAction="#Caesar" text="Caesar" />
+                  <MenuItem mnemonicParsing="false" onAction="#Vigenere" text="Vigenere" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane prefHeight="423.0" prefWidth="750.0">
+         <children>
+            <Button layoutX="281.0" layoutY="388.0" mnemonicParsing="false" onAction="#BaconEncrypt" text="Szyfruj" />
+            <Button layoutX="418.0" layoutY="388.0" mnemonicParsing="false" onAction="#BaconDecrypt" text="Rozszyfruj" />
+            <TextArea fx:id="input" layoutX="5.0" layoutY="7.0" prefHeight="373.0" prefWidth="370.0" wrapText="true" />
+            <TextArea fx:id="output" editable="false" layoutX="375.0" layoutY="7.0" prefHeight="373.0" prefWidth="370.0" wrapText="true" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

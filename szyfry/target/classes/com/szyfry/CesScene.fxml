@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.szyfry.ControllerCes">
+   <children>
+      <MenuBar fx:id="menuBarCes">
+        <menus>
+          <Menu mnemonicParsing="false" text="Okno">
+           <items>
+              <MenuItem mnemonicParsing="false" onAction="#Menu" text="Menu" />
+                  <MenuItem mnemonicParsing="false" onAction="#Vigenere" text="Vigenere" />
+                  <MenuItem mnemonicParsing="false" onAction="#Bacon" text="Bacon" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane prefHeight="423.0" prefWidth="750.0">
+         <children>
+            <Button layoutX="281.0" layoutY="388.0" mnemonicParsing="false" onAction="#CaesarEncrypt" text="Szyfruj" />
+            <Button layoutX="418.0" layoutY="388.0" mnemonicParsing="false" onAction="#CaesarDecrypt" text="Rozszyfruj" />
+            <TextArea fx:id="input" layoutX="5.0" layoutY="7.0" prefHeight="373.0" prefWidth="370.0" wrapText="true" />
+            <TextArea fx:id="output" editable="false" layoutX="375.0" layoutY="7.0" prefHeight="373.0" prefWidth="370.0" wrapText="true" />
+            <TextField fx:id="shifter" layoutX="340.0" layoutY="390.0" prefHeight="21.0" prefWidth="70.0" promptText="przesunięcie" text="3">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+   </children>
+</VBox>
